@@ -186,6 +186,7 @@ body{
 
 #carda{
     float: right;
+    display: inline-block;
     background: linear-gradient(30.35deg, #D37200 1.89%, rgba(255, 138, 0, 0) 96.71%);
 }
 
@@ -200,7 +201,9 @@ body{
 }
 
 #cardc{
+    display: inline-block;
     background: linear-gradient(30.66deg, rgba(235, 0, 255, 0.99) 1.53%, rgba(235, 0, 255, 0) 96.91%);
+    z-index: 1;
 }
 
 #blogsbut{
@@ -213,6 +216,20 @@ body{
     margin-right: 4%;
     float: right;
 
+}
+
+.blog-card{
+    float: right;
+    right: 0px;
+    margin-right: -10%;
+    width: 200px;
+    /* height: 151.13px; */
+}
+
+.Pentool{
+    z-index: 100;
+    margin-top: -100px;
+    top: -100px;
 }
 
 /*FOOTER*/
