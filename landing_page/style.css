@@ -61,6 +61,7 @@ body{
     float: right;
     margin-right: 30px;
     margin-top: 10px;
+    font-family: 'Sunflower', sans-serif;
 }
 
 .figure{
@@ -105,18 +106,20 @@ body{
     height: 70px;;
 }
 
-#learn{
+.learn{
     border-radius: 35px !important;
     width: 150px;
     height: 55px;
+    font-size: 18px;
+    font-family: 'Sunflower', sans-serif;
     background: linear-gradient(90deg, #41BDF2 -15.14%, #13FFBE 120.91%) !important;
     color: black;
     margin-left: 3%; 
-    font-size: 18px;
 }
 
 .goctext{
     padding-left: 3%;
+    font-family: 'Sunflower', sans-serif;   
 }
 
 /*qa*/
@@ -129,21 +132,11 @@ body{
 
 .qatext{
     padding-left: 3%;
+    font-family: 'Sunflower', sans-serif;
 }
 
 .qapic{
     height: 60px;;
-}
-
-#learnmore{
-    border-radius: 35px !important;
-    width: 150px;
-    height: 55px;
-    background: linear-gradient(90deg, #41BDF2 -15.14%, #13FFBE 120.91%) !important;
-    color: black;
-    margin-left: 4%; 
-    font-size: 18px;
-
 }
 
 #qabg{
