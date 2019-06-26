@@ -166,6 +166,10 @@ body{
     width: 100%;
 }
 
+.carousel-class{
+    width: 100%;
+}
+
 .card{
     height: 400px;
     width: 90%;
