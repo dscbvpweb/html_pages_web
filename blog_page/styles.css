@@ -108,6 +108,7 @@ section{
 
 .blog-title{
     display: block;
+    font-weight: 1000;
 }
 
 .blog-desc{
