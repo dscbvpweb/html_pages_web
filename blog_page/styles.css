@@ -20,6 +20,16 @@
     vertical-align: middle;
 }
 
+.navbar-toggler:focus{
+    outline: none;
+}
+
+.hamburger{
+    height: 30px;
+    padding-bottom: 0.5vh;
+    outline: none;
+}
+
 .nav-link{
     color: #000000;
     font-size: 2.5vh;
@@ -58,6 +68,10 @@
     outline: none;
     margin-left: auto;
     margin-right: auto;
+}
+
+.read-btn:focus{
+    outline: none;
 }
 
 .read-text{
