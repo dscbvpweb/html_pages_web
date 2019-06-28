@@ -72,7 +72,7 @@ body{
 #manbg{
     float: right;
     margin-top: -100%;
-    z-index: -1;
+    z-index: 9;
 }
 
 #man{
