@@ -17,6 +17,8 @@ img::selection{
 body{
     color:white;
     scroll-behavior: smooth;
+    max-width: inherit;
+    
 }
 
 .bg{
@@ -25,6 +27,20 @@ body{
 }
 
 /* HEADER */
+
+#text{
+    font-family: 'Major Mono Display', monospace;
+    position: relative ;
+    margin-top : -32%;
+    text-align: center;
+    margin-left: 290px;
+    font-size: 12rem;
+   
+}
+
+#details{
+    position: relative;
+}
 
 #contact{
     display: inline-block;
@@ -47,6 +63,49 @@ body{
     position: absolute;
 }
 
+#details{
+    margin-top: -7%;
+    font-size: 22px;
+    height: 150px;
+   
+}
+
+#detail{
+    padding-left: 170px;
+    border-right: 2px solid white;
+    
+
+}
+
+#sq{
+    width : 100px;
+    margin-top : 5%;
+    margin-left: 35px;
+}
+
+#sqtext{
+    position: relative;
+    margin-left : -19%;
+    padding-top : 80px;
+    color: #111d27;
+
+}
+
+#tr{
+    width: 100px;
+    margin-top: 5%;
+    margin-left : 65px;
+
+
+}
+
+#trtext{
+    position: relative;
+    margin-left : -19%;
+    margin-top : 20px;
+    color : FC0AA1;
+
+}
 
 /* INTRO */
 
@@ -62,6 +121,8 @@ body{
     margin-right: 30px;
     margin-top: 10px;
     font-family: 'Sunflower', sans-serif;
+    font-size: 16px;
+    width : 296px;
 }
 
 .figure{
@@ -126,7 +187,8 @@ body{
 
 .goctext{
     padding-left: 3%;
-    font-family: 'Sunflower', sans-serif;   
+    font-family: 'Sunflower', sans-serif;  
+    font-size: 16px; 
 }
 
 /*qa*/
