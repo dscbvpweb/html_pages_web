@@ -67,7 +67,7 @@ body{
     margin-top: -7%;
     font-size: 22px;
     height: 150px;
-   
+    font-family: 'Sunflower', sans-serif;   
 }
 
 #detail{
@@ -75,6 +75,10 @@ body{
     border-right: 2px solid white;
     
 
+}
+
+.disp-inline{
+    display: inline;
 }
 
 #sq{
@@ -85,10 +89,11 @@ body{
 
 #sqtext{
     position: relative;
+    font-family: 'Sunflower', sans-serif;
     margin-left : -19%;
     padding-top : 80px;
     color: #111d27;
-
+    vertical-align: bottom;
 }
 
 #tr{
@@ -101,10 +106,12 @@ body{
 
 #trtext{
     position: relative;
+    font-family: 'Sunflower', sans-serif;
     margin-left : -19%;
     margin-top : 20px;
-    color : FC0AA1;
-
+    padding-left: 2px;
+    color : #FC0AA1;
+    vertical-align: bottom;
 }
 
 /* INTRO */
@@ -318,11 +325,11 @@ body{
 }
 
 #ftext{
+    font-family: 'Sunflower', sans-serif;
     font-size: 45px;
     padding-left: 10px;
     background: inherit;
-    
-
+    vertical-align: middle;
 }
 
 #icons{
@@ -332,6 +339,7 @@ body{
 
 .fab{
     margin-left: 10px;
+    padding: 5px;
 }
 
 #bottom{
@@ -359,7 +367,7 @@ body{
   }
 
   #ftext:hover{
-    font-weight: 400;
+    font-weight: 600;
     background: rgb(236,66,53);
     background: -webkit-linear-gradient(90deg, rgba(236,66,53,1) 0%, rgba(15,157,85,1) 50%, rgba(0,212,255,1) 100%);
     background-clip: text;
