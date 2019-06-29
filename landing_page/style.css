@@ -247,6 +247,10 @@ body{
     width: 100%;
 }
 
+.fas{
+    vertical-align: middle;
+}
+
 .card{
     height: 400px;
     width: 90%;
