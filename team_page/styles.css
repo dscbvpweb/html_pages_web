@@ -43,13 +43,13 @@ main{
   
   .nav-link{
     color: #000000;
-    font-size: 2.5vh;
+    font-size: 3vh;
     font-family: 'Sunflower', sans-serif;
-    font-weight: 300;
+    font-weight: 500;
   }
   
   .middle{
-      width: 30%;
+      width: 25%;
   }
 
   .team{
@@ -145,7 +145,8 @@ main{
   .buttons {
     position: fixed;
     left: 55%;
-    top: 50%;
+    top: 40%;
+    flex-direction: column;
     border: none;
     z-index: 100;
     transform: translateY(-50%);
@@ -163,9 +164,9 @@ main{
   }
 
   #prev-image{
-    transform: scale(0.5);
+    transform: scale(0.7);
   }
 
   #next-image{
-    transform: rotateX(180deg) scale(0.5);
+    transform: rotateX(180deg) scale(0.7);
   }

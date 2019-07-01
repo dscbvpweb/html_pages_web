@@ -25,12 +25,12 @@ function moveToSelected(element) {
   // Eventos teclado
   $(document).keydown(function(e) {
       switch(e.which) {
-          case 37: // left
+          case 38: // left
           moveToSelected('prev');
           leftSidetext();
           break;
   
-          case 39: // right
+          case 40: // right
           moveToSelected('next');
           leftSidetext();
           break;
