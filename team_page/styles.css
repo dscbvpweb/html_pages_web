@@ -87,7 +87,7 @@ main{
   
   #carousel div {
     position: absolute;
-    transition: transform 1s, top 1s, opacity 1s, z-index 0s;
+    transition: transform 1s, top 1s, opacity 1s, z-index 0.5s;
     opacity: 1;
   }
   
