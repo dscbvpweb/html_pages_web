@@ -7,77 +7,105 @@
     <title>Document</title>
 
     <!-- Bootstrap -->
-    <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Sunflower:300,500&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles.css">
-    <script src="scripts.js"></script>
+    
 </head>
-<body>
-    <div class="body flex-disp">
-        <div class="right">
-            <div class="header">
-                <nav class="navbar navbar-expand-sm navbar-class">              
-                    
-                    <span class="logo-container">
-                        <img class="logo-image" src="../landing_page/assets/SVG-Icons/DSC logo.svg" alt="DSC Logo">
-                        <span class="logo-text">DSC BVP</span>
-                    </span>
 
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                        <span class="navbar-toggler-icon">
-                            <img class="hamburger" src="../landing_page/assets/SVG-Icons/Hamburger.svg" alt="Hamburger">
-                        </span>
-                    </button>
-                    
-                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                        <ul class="nav">
-                            <li class="nav-item">
-                                    <a class="nav-link" href="#">About</a>
-                            </li>
-                            <li class="nav-item">
-                                    <a class="nav-link" href="#">Team</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Achievements</a>
-                            </li>
-                        </ul>
-                    </div>
+<body>
+  <div class="body flex-disp">
+    <div class="right">
+      <div class="header">
+            <nav class="navbar navbar-expand-sm navbar-class">              
                 
-                </nav>
-            </div>
-            <div class="team-name">
-                <h1>
-                    Placeholder
-                </h1>
-            </div>
-            <div class="student-names">
-                somename
-                <button id="next"></button>
-                <button id="prev"></button>
-            </div>
-        </div>
-        <div class="left">
-            <div>
-                <!-- <button id="upArrow"></button> -->
-            </div>
-            <div class="carouselbox">
-                <ul id="team-list" class="content">
-                    <li><img class="team-image" src="./images/1.jpg"></li>
-                    <li><img class="team-image" src="./images/2.jpg"></li>
-                    <li><img class="team-image" src="./images/3.jpg"></li>
-                    <li><img class="team-image" src="./images/4.jpg"></li>
-                    <li><img class="team-image" src="./images/5.jpg"></li>
-                    <li><img class="team-image" src="./images/6.jpg"></li>
-                </ul> 
-            </div>
+                <span class="logo-container">
+                    <img class="logo-image" src="../landing_page/assets/SVG-Icons/DSC logo.svg" alt="DSC Logo">
+                    <span class="logo-text">DSC BVP</span>
+                </span>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon">
+                        <img class="hamburger" src="../landing_page/assets/SVG-Icons/Hamburger.svg" alt="Hamburger">
+                    </span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="nav">
+                        <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                                <a class="nav-link" href="#">Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Achievements</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            
         </div>
     </div>
+    <div class="middle"></div>
+    <div class="left">
+            <main>
+                <div id="carousel">
+
+                    <div class="hideLeft">
+                    <img src="./images/1.jpg">
+                    </div>
+
+                    <div class="prevLeftSecond">
+                    <img src="./images/2.jpg">
+                    </div>
+
+                    <div class="prev">
+                    <img src="./images/3.jpg">
+                    </div>
+
+                    <div class="selected">
+                    <img src="./images/4.jpg">
+                    </div>
+
+                    <div class="next">
+                    <img src="./images/5.jpg">
+                    </div>
+
+                    <div class="nextRightSecond">
+                    <img src="./images/6.jpg">
+                    </div>
+
+                    <div class="hideRight">
+                    <img src="./images/1.jpg">
+                    </div>
+
+                </div>
+
+                <div class="buttons">
+                    <button id="prev">
+                        <img src="../landing_page/assets/SVG-Icons/Arrow Icon.svg" alt="previous">
+                    </button>
+                    <button id="next">
+                        <img src="../landing_page/assets/SVG-Icons/Arrow Icon.svg" alt="next">
+                    </button>
+                </div>
+
+        </main>
+    </div>
+  </div>
+ 
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+  <script src="scripts.js"></script>
+
 </body>
 </html>

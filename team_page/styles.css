@@ -1,77 +1,122 @@
-body{
+html, body, main {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+main{
+    height: 100%;
+    margin: 0;
+    padding: 0;
     overflow: hidden;
 }
 
-.flex-disp{
+  .flex-disp{
     display: flex;
-}
-
-.logo-image{
+  }
+  
+  .logo-image{
     height: 30px;
-}
-
-.logo-text{
+  }
+  
+  .logo-text{
     font-size: 3.5vh;
     font-family: 'Sunflower', sans-serif;
     font-weight: 500;
     vertical-align: middle;
-}
-
-.navbar-toggler:focus{
+  }
+  
+  .navbar-toggler:focus{
     outline: none;
-}
-
-.hamburger{
+  }
+  
+  .hamburger{
     height: 30px;
     padding-bottom: 0.5vh;
     outline: none;
-}
-
-.nav-link{
+  }
+  
+  .nav-link{
     color: #000000;
     font-size: 2.5vh;
     font-family: 'Sunflower', sans-serif;
     font-weight: 300;
-}
+  }
+  
+  .middle{
+      width: 30%;
+  }
 
-.team-name{
-    padding-top: 5vh;
-}
-
-.left{
-    display: inline-block;
-    box-sizing: border-box;
-}
-
-.team{
+  #carousel {
+    /* position: initial; */
+    height: 100%;
+    right: 10%;
+    overflow: hidden;
+  }
+  
+  #carousel div {
     position: absolute;
-    margin-top: -10%;
-}
-
-#team-list{
-    /* position: absolute; */
-    list-style-type: none;
-    /* margin-top: -10%; */
-}
-
-.team-image{
-    height: 40vh;
-    padding: 5vh;
-    margin-left: 4vw;
-    float: right;
-}
-
-li{
-    position: absolute;
-    top: 130px;
-    opacity: 0;
-    transform: scale(0);
-    transition: 1s;
-}
-
-li.current{
-    top: 30px;
+    transition: transform 1s, top 1s, opacity 1s, z-index 0s;
     opacity: 1;
-    transform: scale(1);
-    transition: 1s;
-}
+  }
+  
+  #carousel div img {
+    width: 400px;
+    transition: width 1s;
+  }
+  
+  #carousel div.hideTop {
+    top: 0%;
+    opacity: 0; 
+    transform: translateX(50%) translateY(-90%);
+  }
+  
+  #carousel div.hideTop img {
+    width: 200px;
+  }
+  
+  #carousel div.hideBottom {
+    top: 100%;
+    opacity: 0;
+    transform: translateX(50%) translateY(-90%);
+  }
+  
+  #carousel div.hideBottom img {
+    width: 200px;
+  }
+  
+  #carousel div.prev {
+    z-index: 5;
+    top: 30%;
+    transform: translateX(50px) translateY(-80%);
+  }
+  
+  #carousel div.prev img {
+    width: 300px;
+  }
+  
+  #carousel div.selected {
+    z-index: 10;
+    top: 50%;
+    transform: translateX(0px) translateY(-50%);
+  }
+  
+  #carousel div.next {
+    z-index: 5;
+    top: 90%;
+    transform: translateX(50px) translateY(-80%);
+  }
+  
+  #carousel div.next img {
+    width: 300px;
+  }
+  
+  .buttons {
+    position: fixed;
+    left: 45%;
+    top: 50%;
+    z-index: 100;
+    transform: translateY(-50%);
+  }
+  
