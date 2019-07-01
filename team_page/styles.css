@@ -120,3 +120,7 @@ main{
     transform: translateY(-50%);
   }
   
+
+  .next-btn{
+    transform: rotateX(180deg);
+  }
