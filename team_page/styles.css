@@ -12,6 +12,10 @@ main{
     overflow: hidden;
 }
 
+.right{
+  width: 40%;
+}
+
   .flex-disp{
     display: flex;
   }
@@ -46,6 +50,32 @@ main{
   
   .middle{
       width: 30%;
+  }
+
+  .team{
+    font-family: 'Sunflower', sans-serif;
+    font-size: 7vh;
+    padding-top: 3vh;
+    padding-left: 2vw;
+  }
+
+  .team-desc{
+    padding: 2vh 0vh 2vw 2vw; 
+    font-family: 'Sunflower', sans-serif; 
+  }
+
+  .team-mem{
+    display: block;
+    font-family: 'Sunflower', sans-serif;
+    font-size: 3vh;
+    padding: 2vh 0vh 1vh 2vw;
+  }
+
+  .name-elem{
+    list-style-type: none;
+    font-family: 'Sunflower', sans-serif;
+    font-size: 3vh;
+    padding-left: 2vw;
   }
 
   #carousel {
@@ -114,13 +144,28 @@ main{
   
   .buttons {
     position: fixed;
-    left: 45%;
+    left: 55%;
     top: 50%;
+    border: none;
     z-index: 100;
     transform: translateY(-50%);
   }
   
+  .button{
+    border: none;
+    padding: 0;
+    background: #ffffff;
+    outline: none;
+  }
 
-  .next-btn{
-    transform: rotateX(180deg);
+  .button:focus{
+    outline: none;
+  }
+
+  #prev-image{
+    transform: scale(0.5);
+  }
+
+  #next-image{
+    transform: rotateX(180deg) scale(0.5);
   }
