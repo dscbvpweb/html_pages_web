@@ -23,8 +23,7 @@
      <!-- Google Fonts -->
      <link href="https://fonts.googleapis.com/css?family=Amiko|Sunflower:300&display=swap" rel="stylesheet">
 
-     <!-- JS Scripts -->
-     <script src="scripts.js"></script>
+     
      
      <title>Document</title>
  </head>
@@ -144,74 +143,49 @@
      <div class="blogbg">
          
          <img id="blogtext" src="assets/SVG-Icons/blog text.svg">
+
          <div id="carddis">
          
-            <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                <!-- Indicators -->
-                <!-- <ol class="carousel-indicators">
-                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                  <li data-target="#myCarousel" data-slide-to="1"></li>
-                  <li data-target="#myCarousel" data-slide-to="2"></li>
-                </ol> -->
-              
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner carousel-class">
-                    <div class="col-lg-4">
-                        <div class="card" id="carda">
-                            <img src="assets/SVG-Icons/Angular Brakcets.svg" alt="" class="blog-card">
-   
+                <div class="somename">
+
+                    <div id="carousel" class="flex-disp">
+                        
+                        <div class="left-card">
+                            <span class="card" id="carda">
+                                <img src="assets/SVG-Icons/Angular Brakcets.svg" alt="" class="blog-card">
+                            </span>
                         </div>
-                   </div>
-              
-                  <div id="center" class="col-lg-4">
-                    <div class="card" id="cardb">
-                        <img src="assets/SVG-Icons/Camera Bubble.svg" alt="" class="blog-card">
+                
+                        <div class="selected">
+                            <span class="card" id="cardb">
+                                <img src="assets/SVG-Icons/Camera Bubble.svg" alt="" class="blog-card">
+                            </span>
+                        </div>
+                    
+                        <div class="right-card">
+                            <span class="card" id="cardc">
+                                <img src="assets/SVG-Icons/Pentool.svg" alt="" class="blog-card Pentool">
+                            </span>
+                        </div>
 
                     </div>
-                </div>
-              
-                <div class="col-lg-4">
-                    <div class="card" id="cardc">
-                        <img src="assets/SVG-Icons/Pentool.svg" alt="" class="blog-card Pentool">
-
-                    </div>
-                </div>
-              
-                <!-- Left and right controls -->
-                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                    <i class="fas fa-chevron-left fa-4x" onclick=slideleft()></i>
-                  <span class="sr-only">Previous</span>
-                </a>
-                <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                  <i class="fas fa-chevron-right fa-4x" onclick=slideright()></i>
-                  <span class="sr-only">Next</span>
-                </a>
               </div>
-               
-            
-            
-            <!-- <div class="row">
-
-                 <div class="col-lg-4">
-                     <div class="card" id="carda">
-
-                     </div>
+              
+                <div class="buttons">
+                    <!-- Left and right controls -->
+                    <button id="prev">
+                        <i class="fas fa-chevron-left fa-4x"></i>
+                        <span class="sr-only">Previous</span>
+                    </button>
+                    <button id="next">
+                        <i class="fas fa-chevron-right fa-4x"></i>
+                        <span class="sr-only">Next</span>
+                    </button>
                 </div>
-
-                 <div id="center" class="col-lg-4">
-                     <div class="card" id="cardb">
-
-                     </div>
-                 </div>
-
-                 <div class="col-lg-4">
-                     <div class="card" id="cardc">
-
-                     </div>
-                 </div>
-
-             </div> -->
-             </div>
+            </div>
+               
+        
+        </div>
              <br><br>
              <button id="blogsbut" type="button" class="btn btn-primary learn">Read all blogs →</button>
          </div>
@@ -233,6 +207,10 @@
          <center id="bottom"><i class="fas fa-copyright"></i> DSC 2019</center>
          
      </div>
+
+     <!-- JS Scripts -->
+     <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+     <script src="scripts.js"></script>
 
  </body>
 </html>

@@ -242,30 +242,30 @@ body{
 #blogtext{
     width: 100%;
 }
-
+/* 
 .carousel-class{
     width: 100%;
-}
+} */
 
 .fas{
     vertical-align: middle;
 }
 
 .card{
-    height: 400px;
-    width: 90%;
+    display: block;
+    height: 300px;
+    width: 50vw;
     border-radius: 57px;
 }
 
 #carda{
-    float: right;
     display: inline-block;
     background: linear-gradient(30.35deg, #D37200 1.89%, rgba(255, 138, 0, 0) 96.71%);
 }
 
-#center{
+/* #center{
     text-align: center;
-}
+} */
 
 #cardb{
     align-self: center;
@@ -303,6 +303,60 @@ body{
     z-index: 100;
     margin-top: -100px;
     top: -100px;
+}
+
+.flex-disp{
+    display: flex;
+}
+
+/* carousel */
+#carousel{
+    /* width: 100%; */
+    height: 20vh;
+    overflow: hidden;
+}
+
+#carousel > div {
+    position: absolute;
+    transition: transform 1s, left 1s, z-index 0.5s;
+    opacity: 1;
+}
+
+#carousel > div.left-card {
+    z-index: 5;
+    height: 10vh;
+    left: 30%;
+    transform: translateX(-80%);
+}
+
+#carousel > div.right-card {
+    z-index: 5;
+    height: 10vh;
+    left: 82%;
+    transform: translateX(-80%);
+}
+
+#carousel > div.selected {
+    z-index: 10;
+    height: 40vh;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.buttons {
+    top: 40%;
+    border: none;
+    z-index: 100;
+}
+
+#prev{
+    float: left;
+    left: 0%;
+}
+
+#next{
+    float: right;
+    right: 0%;
 }
 
 /*FOOTER*/
@@ -377,4 +431,15 @@ body{
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+
+  @media screen and (min-width: 600px){
+      .buttons{
+          display: none;
+      }
+
+      .card{
+          height: 400px;
+          width: 20vw;
+      }
   }

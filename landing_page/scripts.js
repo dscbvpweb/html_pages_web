@@ -1,43 +1,34 @@
+function moveToSelected(element) {
 
-function slideCarousel(){
-    var x = document.getElementsByClassName('card')
-    console.log(x.length)
-    for (i=0; i<x.length; i++){
-        x[i].style.transform="translateX(100px)";
+    if (element == "right-card") {
+      var selected = $(".selected").next();
+    } else if (element == "left-card") {
+      var selected = $(".selected").prev();
+    } else {
+      var selected = element;
     }
-    console.log('yes')
+  
+    var next = $(selected).nextAll();
+    var prev = $(selected).prevAll();
+  
+    $(selected).removeClass().addClass("selected");
+    // console.log($('.selected').attr('value'));
+  
+    $(prev).removeClass().addClass("left-card");
+    $(next).removeClass().addClass("right-card");
 }
 
-function slideleft(){
-    var elem = document.getElementsByClassName("card");   
-    var pos = 0;
-    var id = setInterval(frame, 0.2);
-    function frame() {
-        if (pos == 350) {
-        clearInterval(id);
-        } else {
-        pos++; 
-        for (i=0; i<elem.length; i++){
-            // elem[i].style.top = pos + "px"; 
-            elem[i].style.left = pos + "px"; 
-        }
-        }
-    }
-}
-
-function slideright(){
-    var elem = document.getElementsByClassName("card");   
-    var pos = 350;
-    var id = setInterval(frame, 0.2);
-    function frame() {
-        if (pos == 350) {
-        clearInterval(id);
-        } else {
-        pos--; 
-        for (i=0; i<elem.length; i++){
-            // elem[i].style.top = pos + "px"; 
-            elem[i].style.left = pos + "px"; 
-        }
-        }
-    }
-}
+$('#carousel div').click(function() {
+    moveToSelected($(this));
+    // leftSidetext();
+  });
+  
+  $('#prev').click(function() {
+    moveToSelected('left-card');
+    // leftSidetext();
+  });
+  
+  $('#next').click(function() {
+    moveToSelected('right-card');
+    // leftSidetext();
+  });
