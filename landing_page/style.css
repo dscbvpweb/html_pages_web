@@ -326,14 +326,14 @@ body{
     z-index: 5;
     height: 10vh;
     left: 30%;
-    transform: translateX(-80%);
+    transform: translateX(-100%);
 }
 
 #carousel > div.right-card {
     z-index: 5;
     height: 10vh;
-    left: 82%;
-    transform: translateX(-80%);
+    left: 90%;
+    transform: translateX(-100%);
 }
 
 #carousel > div.selected {

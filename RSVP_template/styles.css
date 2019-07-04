@@ -1,0 +1,126 @@
+html, body{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Sunflower', sans-serif;
+    font-weight: 500;
+    overflow: hidden;
+}
+
+.flex-disp{
+    display: flex;
+    justify-content: space-between;
+}
+
+.left{
+    padding-left: 7vh;
+    padding-top: 4vh;
+}
+
+.rsvp{
+    display: block;
+    text-align: center;
+    color: #C4C4C4;
+    font-size: 7vh;
+}
+
+.when{
+    padding: 7vh;
+}
+
+.date{
+    display: block;
+    text-align: center;
+    font-size: 6vh;
+}
+
+.time{
+    display: block;
+    text-align: center;
+    font-size: 5vh;
+}
+
+.where{
+    padding: 7vh;
+}
+
+.name{
+    display: block;
+    text-align: center;
+    font-size: 6vh;
+}
+
+.venue{
+    display: block;
+    text-align: center;
+    font-size: 5vh;
+}
+
+.logo{
+    position: absolute;
+    left: 5px;
+    bottom: 10px;
+}
+
+#dsclogo{
+    width: 60px;
+    vertical-align: middle;
+}
+
+#dsc{
+    vertical-align: middle;
+}
+
+.image{
+    top: 0%;
+    right: 0%;
+    float: right;
+}
+
+@media screen and (max-width: 600px){
+    .flex-disp{
+        flex-direction: column;
+    }
+
+    .left{
+        padding-left: 0vh;
+        text-align: center;
+        flex-grow: 4;
+    }
+
+    .rsvp{
+        font-size: 5vh;
+    }
+
+    .date{
+        font-size: 3vh;
+    }
+
+    .venue{
+        font-size: 3vh;
+    }
+
+    .time{
+        font-size: 3vh;
+    }
+
+    .name{
+        font-size: 4vh;
+    }
+
+    .when{
+        padding: 4vh;
+    }
+
+    .where{
+        padding: 4vh;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .image{
+        margin-right: -20%;
+        width: 100%;
+    }
+}
