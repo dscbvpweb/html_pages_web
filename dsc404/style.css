@@ -14,7 +14,7 @@ body{
 	height: 100%;
 	max-width: 100%;
 	min-width: 450px;
-	margin 0 auto;
+	margin: 0 auto;
 }
 .logo{
 	width: 100px;
@@ -31,8 +31,6 @@ body{
 	flex-flow: column;
    
 	justify-content: center;
-   
-	
 	
 }
 
