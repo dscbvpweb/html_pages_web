@@ -1,0 +1,50 @@
+@font-face {
+  font-family: dosis;
+  src: url(fonts/Dosis-Bold.ttf);
+}
+
+@font-face {
+  font-family: carrois;
+  src: url(fonts/CarroisGothic-Regular.ttf);
+}
+
+@font-face {
+  font-family: sunflower;
+  src: url(fonts/Sunflower-medium.ttf);
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.asd {
+  background-color: aquamarine;
+}
+
+.box {
+  max-width: 100%;
+}
+
+.img-style {
+  width: 100%;
+  height: 60%;
+  background-size: cover;
+  position: absolute;
+  z-index: 2;
+  transition: 0.5s;
+  transform: translateX(0%);
+}
+
+.text-style {
+  display: inline-block;
+  width: 100%;
+  height: 60vh;
+}
+
+
+.moved .img-style{
+  transform: translateX(-100%);
+}
